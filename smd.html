@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+&lt;style&gt;
+
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:black;
+    overflow:hidden;
+}
+
+.box{
+    text-align:center;
+    color:white;
+
+    animation:move 3s infinite alternate;
+}
+
+img{
+    width:150px;
+    border-radius:20px;
+}
+
+h1{
+    font-size:40px;
+}
+
+@keyframes move{
+
+    from{
+        transform:translateX(-200px);
+        opacity:0;
+    }
+
+    to{
+        transform:translateX(200px);
+        opacity:1;
+    }
+
+}
+
+button{
+    margin-top:400px;
+    padding:15px 30px;
+    border:none;
+    background:blue;
+    color:white;
+    font-size:20px;
+    border-radius:10px;
+
+    transition:0.5s;
+}
+
+#btn1{
+    margin-top:400px;
+    margin-left:100px;
+    padding:15px 30px;
+
+    background:linear-gradient(to left,red,black,purple);
+    color:white;
+    font-size:20px;
+    border-radius:10px;
+
+    transition:0.5s;
+}
+
+button:hover{
+    transform:scale(1.2);
+    background:red;
+}
+
+&lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;div class="box"&gt;
+
+&lt;img src="https://picsum.photos/200"&gt;
+
+&lt;h1&gt;Welcome&lt;/h1&gt;
+
+&lt;/div&gt;
+
+&lt;button&gt;Hover Me&lt;/button&gt;
+
+&lt;button id="btn1"&gt;btn&lt;/button&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+</pre>
+</body>
+</html>

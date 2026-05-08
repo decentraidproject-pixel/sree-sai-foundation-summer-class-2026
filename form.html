@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        &lt;form&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Biryani Order Form&lt;/legend&gt;
+
+        &lt;p&gt;
+            &lt;label&gt;Name&lt;/label&gt;
+            &lt;input type="text"&gt;
+        &lt;/p&gt;
+
+        &lt;p&gt;
+            &lt;label&gt;Password&lt;/label&gt;
+            &lt;input type="password"&gt;
+        &lt;/p&gt;
+
+        &lt;p&gt;
+            &lt;label&gt;Quantity&lt;/label&gt;
+            &lt;input type="number" min="1" max="10" value="1"&gt;
+        &lt;/p&gt;
+
+        &lt;p&gt;&lt;b&gt;Choose Biryani&lt;/b&gt;&lt;/p&gt;
+
+        &lt;label&gt;&lt;input type="radio" name="biryani"&gt; Dum Biryani&lt;/label&gt;
+        &lt;label&gt;&lt;input type="radio" name="biryani"&gt; Mutton Biryani&lt;/label&gt;
+        &lt;label&gt;&lt;input type="radio" name="biryani"&gt; Chicken Biryani&lt;/label&gt;
+
+        &lt;p&gt;&lt;b&gt;Extras&lt;/b&gt;&lt;/p&gt;
+
+        &lt;label&gt;&lt;input type="checkbox"&gt; Extra Spicy&lt;/label&gt;
+        &lt;label&gt;&lt;input type="checkbox"&gt; Extra Rice&lt;/label&gt;
+        &lt;label&gt;&lt;input type="checkbox"&gt; Raita&lt;/label&gt;
+
+        &lt;p&gt;
+            &lt;textarea cols="40" rows="5" placeholder="Write your order note..."&gt;&lt;/textarea&gt;
+        &lt;/p&gt;
+
+        &lt;p&gt;
+            &lt;select&gt;
+                &lt;option&gt;Dum Biryani&lt;/option&gt;
+                &lt;option&gt;Mutton Biryani&lt;/option&gt;
+                &lt;option&gt;Chicken Biryani&lt;/option&gt;
+                &lt;option&gt;Veg Biryani&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/p&gt;
+
+        &lt;p&gt;
+            &lt;input type="text" list="content-list" placeholder="Choose Biryani"&gt;
+
+            &lt;datalist id="content-list"&gt;
+                &lt;option value="Dum Biryani"&gt;
+                &lt;option value="Mutton Biryani"&gt;
+                &lt;option value="Chicken Biryani"&gt;
+            &lt;/datalist&gt;
+        &lt;/p&gt;
+
+        &lt;button type="submit"&gt;Order Now&lt;/button&gt;
+        &lt;button type="reset"&gt;Clear&lt;/button&gt;
+
+    &lt;/fieldset&gt;
+&lt;/form&gt;
+    </pre>
+
+    <pre>
+        <b>CSS</b><br><br>
+        
+form{
+    display:flex;
+    justify-content:center;
+    padding:20px;
+}
+
+fieldset{
+    width:100%;
+    max-width:450px;
+    padding:20px;
+    border:2px solid #ccc;
+    border-radius:10px;
+}
+
+legend{
+    font-size:20px;
+    font-weight:bold;
+    text-align:center;
+}
+
+p{
+    margin:10px 0;
+}
+
+label{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin:8px 0;
+    font-size:16px;
+}
+
+input, textarea, select{
+    width:100%;
+    padding:8px;
+    margin-top:5px;
+    border:1px solid #aaa;
+    border-radius:5px;
+    box-sizing:border-box;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+    width:auto;
+}
+
+button{
+    width:48%;
+    padding:10px;
+    margin-top:10px;
+    border:none;
+    cursor:pointer;
+    background:#e5fbd7;
+    font-weight:bold;
+}
+
+button:hover{
+    background:#c8f0b5;
+}
+
+
+@media(max-width:600px){
+    fieldset{
+        width:95%;
+    }
+
+    button{
+        width:100%;
+        margin-bottom:10px;
+    }
+}
+
+
+    </pre>
+</body>
+</html>

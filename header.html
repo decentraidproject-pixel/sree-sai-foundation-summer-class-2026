@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        
+&lt;body&gt;
+
+&lt;header&gt;
+
+    &lt;nav id="nav"&gt;
+
+        &lt;div id="link"&gt;
+            &lt;img src="img/pic1.png"&gt;
+            &lt;p&gt;Royal Dum Biryani&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;input type="checkbox" id="menu"&gt;
+
+        &lt;label for="menu" id="icon"&gt;
+            &lt;span&gt;&lt;/span&gt;
+            &lt;span&gt;&lt;/span&gt;
+            &lt;span&gt;&lt;/span&gt;
+        &lt;/label&gt;
+
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="menu.html"&gt;Menu&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="about.html"&gt;Location&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="about.html"&gt;About Us&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+
+    &lt;/nav&gt;
+
+&lt;/header&gt;
+&lt;/body&gt;
+    </pre>
+
+    <pre>
+
+        <b>CSS</b>
+        <br>
+        <br>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+}
+body{
+    height: 2000px;
+}
+
+
+#nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#e5fbd7;
+    padding:15px;
+    position:relative;
+}
+
+#link{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+#link img{
+    width:70px;
+}
+
+#link p{
+    font-size:22px;
+    font-weight:bold;
+}
+
+#nav ul{
+    display:flex;
+    gap:20px;
+}
+
+#nav li{
+    list-style:none;
+    font-size:18px;
+    cursor:pointer;
+}
+
+#menu{
+    display:none;
+}
+
+#icon{
+    display:none;
+    width:35px;
+    cursor:pointer;
+}
+
+#icon span{
+    display:block;
+    height:4px;
+    background:black;
+    margin:6px 0;
+    transition:.4s;
+}
+
+@media(max-width:768px){
+
+#nav{
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+#icon{
+    display:block;
+    position:absolute;
+    right:20px;
+    top:25px;
+}
+
+#nav ul{
+    display:none;
+    flex-direction:column;
+    width:100%;
+    text-align:center;
+    margin-top:20px;
+}
+
+#menu:checked~ul{
+    display:flex;
+}
+
+#menu:checked~#icon span:nth-child(1){
+    transform:rotate(45deg) translate(7px,7px);
+}
+
+#menu:checked~#icon span:nth-child(2){
+    opacity:0;
+}
+
+#menu:checked~#icon span:nth-child(3){
+    transform:rotate(-45deg) translate(7px,-7px);
+}
+
+}
+
+    </pre>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        &lt;div id="pic"&gt;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+          
+            &lt;img src="img/pic3.png"/&gt;
+            &lt;p&gt;Dum Biryani&lt;/p&gt;
+            &lt;img src="img/pic4.png"/&gt;
+            
+&lt;/div&gt;
+    </pre>
+
+    <pre>
+        <b>CSS</b><br><br>
+        #pic{
+    display: flex;
+    align-items: center;
+}
+#pic p{
+    display: inline-flex;
+    font-size: 100px;
+    background: linear-gradient(to right,red,purple);
+    background-position: center;
+    background-size:contain;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+@media(max-width:768px){
+    #pic{
+        flex-direction:column;
+    }
+
+    #pic img{
+        width:90%;
+        max-width:300px;
+    }
+
+    #pic p{
+        font-size:20px;
+    }
+}
+    </pre>
+</body>
+</html>
