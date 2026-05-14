@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        &lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Royal Dum Biryani&lt;/title&gt;
+
+    &lt;style&gt;
+
+        body{
+            margin:0;
+            background-color:#f5f5f5;
+        }
+
+        nav{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:20px;
+            background-color:#dff0d8;
+        }
+
+        #link{
+            display:flex;
+            align-items:center;
+            gap:20px;
+        }
+
+        #link img{
+            width:70px;
+        }
+
+        ul{
+            display:flex;
+            list-style:none;
+            gap:30px;
+        }
+
+        ul li a{
+            text-decoration:none;
+            font-size:20px;
+        }
+
+        .dev{
+            text-align:center;
+            font-size:18px;
+            background-color:bisque;
+            padding:10px;
+        }
+
+        #pic{
+            display:flex;
+            justify-content:space-around;
+            align-items:center;
+            flex-wrap:wrap;
+            margin-top:30px;
+        }
+
+        #pic img{
+            width:300px;
+        }
+
+        #pic p{
+            font-size:90px;
+            color:crimson;
+        }
+
+        main p{
+            font-size:22px;
+            padding:20px;
+            line-height:45px;
+        }
+
+        video{
+            width:400px;
+            margin-left:20px;
+        }
+
+        audio{
+            display:block;
+            margin:20px;
+        }
+
+        .card{
+            display:grid;
+            grid-template-columns:repeat(4,1fr);
+            gap:20px;
+            padding:20px;
+        }
+
+        .card1{
+            background-color:white;
+            padding:20px;
+            text-align:center;
+            border-radius:10px;
+        }
+
+        .card1 img{
+            width:150px;
+        }
+
+        button{
+            padding:10px 20px;
+            border:none;
+            background-color:orange;
+            cursor:pointer;
+        }
+
+        form{
+            padding:20px;
+        }
+
+        fieldset{
+            padding:20px;
+        }
+
+        footer{
+            background-color:rgb(197,255,185);
+            padding:20px;
+            text-align:center;
+        }
+
+        #menu{
+            display:none;
+        }
+
+        #icon{
+            display:none;
+            flex-direction:column;
+            gap:5px;
+        }
+
+        #icon span{
+            width:25px;
+            height:3px;
+            background-color:black;
+        }
+
+        @media(max-width:600px){
+
+            nav{
+                flex-wrap:wrap;
+            }
+
+            #icon{
+                display:flex;
+            }
+
+            ul{
+                width:100%;
+                flex-direction:column;
+                display:none;
+                text-align:center;
+            }
+
+            #menu:checked~ul{
+                display:flex;
+            }
+
+            #pic{
+                flex-direction:column;
+            }
+
+            #pic img{
+                width:200px;
+            }
+
+            #pic p{
+                font-size:50px;
+                text-align:center;
+            }
+
+            .card{
+                grid-template-columns:1fr;
+            }
+
+            video{
+                width:90%;
+                margin-left:10px;
+            }
+
+            main p{
+                font-size:18px;
+                line-height:35px;
+            }
+
+        }
+
+    &lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;header&gt;
+
+    &lt;nav&gt;
+
+        &lt;div id="link"&gt;
+            &lt;img src="img/pic1.png"&gt;
+            &lt;p&gt;Royal Dum Biryani&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;input type="checkbox" id="menu"&gt;
+
+        &lt;label for="menu" id="icon"&gt;
+            &lt;span&gt;&lt;/span&gt;
+            &lt;span&gt;&lt;/span&gt;
+            &lt;span&gt;&lt;/span&gt;
+        &lt;/label&gt;
+
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Menu&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Location&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;About Us&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+
+    &lt;/nav&gt;
+
+&lt;/header&gt;
+
+&lt;p class="dev"&gt;Developed by Pooja&lt;/p&gt;
+
+&lt;main&gt;
+
+    &lt;div id="pic"&gt;
+
+        &lt;img src="img/pic3.png"&gt;
+
+        &lt;p&gt;Dum Biryani&lt;/p&gt;
+
+        &lt;img src="img/pic4.png"&gt;
+
+    &lt;/div&gt;
+
+    &lt;p&gt;
+
+        Dum Biryani is a very popular and tasty Indian dish.
+        It is made with rice, meat, and special spices.
+        The word “Dum” means slow cooking in steam.
+        This method gives rich aroma and delicious taste.
+
+        &lt;a href="https://www.youtube.com/"&gt;
+            How to make Dum Biryani
+        &lt;/a&gt;
+
+    &lt;/p&gt;
+
+    &lt;video controls&gt;
+        &lt;source src="video1.mp4" type="video/mp4"&gt;
+    &lt;/video&gt;
+
+    &lt;audio controls&gt;
+        &lt;source src="audio.mp3"&gt;
+    &lt;/audio&gt;
+
+    &lt;p style="text-align:center;font-weight:900;"&gt;
+        Order Now
+    &lt;/p&gt;
+
+    &lt;div class="card"&gt;
+
+        &lt;div class="card1"&gt;
+            &lt;img src="img/pic1.png"&gt;
+            &lt;p&gt;&lt;del&gt;400&lt;/del&gt; 300&lt;/p&gt;
+            &lt;button&gt;Buy Now&lt;/button&gt;
+        &lt;/div&gt;
+
+        &lt;div class="card1"&gt;
+            &lt;img src="img/pic1.png"&gt;
+            &lt;p&gt;&lt;del&gt;400&lt;/del&gt; 300&lt;/p&gt;
+            &lt;button&gt;Buy Now&lt;/button&gt;
+        &lt;/div&gt;
+
+        &lt;div class="card1"&gt;
+            &lt;img src="img/pic1.png"&gt;
+            &lt;p&gt;&lt;del&gt;400&lt;/del&gt; 300&lt;/p&gt;
+            &lt;button&gt;Buy Now&lt;/button&gt;
+        &lt;/div&gt;
+
+        &lt;div class="card1"&gt;
+            &lt;img src="img/pic1.png"&gt;
+            &lt;p&gt;&lt;del&gt;400&lt;/del&gt; 300&lt;/p&gt;
+            &lt;button&gt;Buy Now&lt;/button&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+&lt;/main&gt;
+
+&lt;form&gt;
+
+    &lt;fieldset&gt;
+
+        &lt;legend&gt;Biryani Order Form&lt;/legend&gt;
+
+        &lt;p&gt;
+            &lt;label&gt;Name&lt;/label&gt;
+            &lt;input type="text"&gt;
+        &lt;/p&gt;
+
+        &lt;p&gt;
+            &lt;label&gt;Password&lt;/label&gt;
+            &lt;input type="password"&gt;
+        &lt;/p&gt;
+
+        &lt;p&gt;
+            &lt;label&gt;Quantity&lt;/label&gt;
+            &lt;input type="number" min="1" max="10"&gt;
+        &lt;/p&gt;
+
+        &lt;label&gt;
+            &lt;input type="radio" name="biryani"&gt;
+            Chicken Biryani
+        &lt;/label&gt;
+
+        &lt;label&gt;
+            &lt;input type="radio" name="biryani"&gt;
+            Mutton Biryani
+        &lt;/label&gt;
+
+        &lt;p&gt;
+            &lt;textarea cols="40" rows="5"&gt;&lt;/textarea&gt;
+        &lt;/p&gt;
+
+        &lt;button type="submit"&gt;Order Now&lt;/button&gt;
+
+    &lt;/fieldset&gt;
+
+&lt;/form&gt;
+
+&lt;footer&gt;
+
+    &lt;p&gt;© 2026 Royal Dum Biryani&lt;/p&gt;
+
+&lt;/footer&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+    </pre>
+</body>
+</html>
